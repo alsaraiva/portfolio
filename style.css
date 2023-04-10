@@ -1,0 +1,590 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+a:hover {
+  color: #852d75;
+  font-weight: bold;
+}
+
+a:active {
+  color: black;
+  font-weight: bolder;
+}
+
+.nome-header {
+  color: #852d75;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+span {
+  color: black;
+  font-size: 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.linkedin {
+  width: 52px;
+  height: 30px;
+}
+
+.linkedin:hover {
+  opacity: 0.5;
+}
+
+.git {
+  width: 30px;
+  margin-left: -10px;
+  margin-right: 10px;
+}
+
+.git:hover {
+  opacity: 0.5;
+}
+
+.whats {
+  width: 30px;
+  margin-left: -5px;
+}
+
+.whats:hover {
+  opacity: 0.5;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-left: 210px;
+  margin-right: 200px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+h1 span {
+  font-size: 40px;
+  color: #852d75;
+}
+
+.container {
+  height: 70%;
+  display: flex;
+  margin-bottom: 30px;
+}
+.container h2 {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  margin-left: -09px;
+}
+.container h2 span.typed-text {
+  font-weight: bold;
+  color: #852d75;
+  font-size: 40px;
+}
+.container h2 span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container h2 span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+.text-home {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.btn-inicial {
+  display: flex;
+  justify-content: start;
+  gap: 70px;
+}
+button {
+  background: black;
+  border: none;
+  padding: 10px 50px;
+  margin-top: 40px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #852d75;
+  scale: 105%;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.title-projects {
+  margin-top: 80px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.title-projects h1 {
+  margin-top: 50px;
+  color: white;
+}
+.container-wrapper {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  padding: 50px;
+}
+
+.starbucks {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  margin-left: 250px;
+}
+.starbucks h2 {
+  font-size: 30px;
+  color: white;
+  margin-top: 70px;
+  margin-left: 400px;
+  margin-bottom: 30px;
+}
+
+.starbucks img {
+  width: 350px;
+  margin-top: -225px;
+  border: 3px solid #852d75;
+}
+
+.starbucks img:hover {
+  scale: 105%;
+  border: 5px solid #411138;
+}
+
+.starbucks p {
+  color: white;
+  margin-top: 90px;
+  margin-left: 400px;
+  margin-bottom: 30px;
+}
+
+.starbucks a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 400px;
+  color: #852d75;
+  margin-top: -15px;
+}
+
+.starbucks a:hover {
+  color: white;
+  opacity: 0.2;
+}
+
+.starbucks a:active {
+  color: white;
+  opacity: 0.4;
+}
+
+.conversor-moedas {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 250px;
+  margin-top: 50px;
+}
+
+.conversor-moedas h2 {
+  font-size: 30px;
+  color: white;
+  margin-top: 70px;
+  margin-right: 400px;
+  margin-bottom: 30px;
+}
+
+.conversor-moedas img {
+  width: 350px;
+  margin-top: -225px;
+  border: 3px solid #852d75;
+}
+
+.conversor-moedas img:hover {
+  scale: 105%;
+  border: 5px solid #411138;
+}
+
+.conversor-moedas p {
+  color: white;
+  margin-top: 90px;
+  margin-right: 400px;
+  margin-bottom: 30px;
+}
+
+.conversor-moedas a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 400px;
+  color: #852d75;
+  margin-top: -15px;
+}
+
+.conversor-moedas a:hover {
+  color: white;
+  opacity: 0.2;
+}
+
+.conversor-moedas a:active {
+  color: white;
+  opacity: 0.4;
+}
+
+.tela-login {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  margin-left: 250px;
+}
+.tela-login h2 {
+  font-size: 30px;
+  color: white;
+  margin-top: 70px;
+  margin-left: 400px;
+  margin-bottom: 30px;
+}
+
+.tela-login img {
+  width: 350px;
+  margin-top: -225px;
+  border: 3px solid #852d75;
+}
+
+.tela-login img:hover {
+  scale: 105%;
+  border: 5px solid #411138;
+}
+
+.tela-login p {
+  color: white;
+  margin-top: 90px;
+  margin-left: 400px;
+  margin-bottom: 30px;
+}
+
+.tela-login a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 400px;
+  color: #852d75;
+  margin-top: -15px;
+}
+
+.tela-login a:hover {
+  color: white;
+  opacity: 0.2;
+}
+
+.tela-login a:active {
+  color: white;
+  opacity: 0.4;
+}
+
+.halloween {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 280px;
+  margin-top: 50px;
+}
+
+.halloween h2 {
+  font-size: 30px;
+  color: white;
+  margin-top: 70px;
+  margin-right: 400px;
+}
+
+.halloween img {
+  width: 350px;
+  margin-top: -225px;
+  border: 3px solid #852d75;
+}
+
+.halloween img:hover {
+  scale: 105%;
+  border: 5px solid #411138;
+}
+
+.halloween p {
+  color: white;
+  margin-top: 90px;
+  margin-right: 400px;
+  margin-bottom: 80px;
+}
+
+.halloween a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 400px;
+  color: #852d75;
+  margin-top: -15px;
+}
+
+.halloween a:hover {
+  color: white;
+  opacity: 0.2;
+}
+
+.halloween a:active {
+  color: white;
+  opacity: 0.4;
+}
+
+.clone-netflix {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  margin-left: 250px;
+  margin-top: 50px;
+}
+.clone-netflix h2 {
+  font-size: 30px;
+  color: white;
+  margin-top: 70px;
+  margin-left: 400px;
+  margin-bottom: 30px;
+}
+
+.clone-netflix img {
+  width: 350px;
+  margin-top: -225px;
+  border: 3px solid #852d75;
+}
+
+.clone-netflix img:hover {
+  scale: 105%;
+  border: 5px solid #411138;
+}
+
+.clone-netflix p {
+  color: white;
+  margin-top: 90px;
+  margin-left: 400px;
+  margin-bottom: 30px;
+}
+
+.clone-netflix a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 400px;
+  color: #852d75;
+  margin-top: -15px;
+}
+
+.clone-netflix a:hover {
+  color: white;
+  opacity: 0.2;
+}
+
+.clone-netflix a:active {
+  color: white;
+  opacity: 0.4;
+}
+
+.jogo-memoria {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-right: 280px;
+  margin-top: 50px;
+}
+
+.jogo-memoria h2 {
+  font-size: 30px;
+  color: white;
+  margin-top: 70px;
+  margin-right: 400px;
+}
+
+.jogo-memoria img {
+  width: 350px;
+  margin-top: -225px;
+  border: 3px solid #852d75;
+}
+
+.jogo-memoria img:hover {
+  scale: 105%;
+  border: 5px solid #411138;
+}
+
+.jogo-memoria p {
+  color: white;
+  margin-top: 120px;
+  margin-right: 400px;
+  margin-bottom: 30px;
+}
+
+.jogo-memoria a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 400px;
+  color: #852d75;
+  margin-top: -15px;
+}
+
+.jogo-memoria a:hover {
+  color: white;
+  opacity: 0.2;
+}
+
+.jogo-memoria a:active {
+  color: white;
+  opacity: 0.4;
+}
+
+.snake {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  margin-left: 250px;
+  margin-top: 50px;
+}
+.snake h2 {
+  font-size: 30px;
+  color: white;
+  margin-top: 70px;
+  margin-left: 400px;
+  margin-bottom: 30px;
+}
+
+.snake img {
+  width: 350px;
+  margin-top: -225px;
+  border: 3px solid #852d75;
+}
+
+.snake img:hover {
+  scale: 105%;
+  border: 5px solid #411138;
+}
+
+.snake p {
+  color: white;
+  margin-top: 90px;
+  margin-left: 400px;
+  margin-bottom: 30px;
+}
+
+.snake a {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 400px;
+  color: #852d75;
+  margin-top: -15px;
+}
+
+.snake a:hover {
+  color: white;
+  opacity: 0.2;
+}
+
+.snake a:active {
+  color: white;
+  opacity: 0.4;
+}
+
+.link-back {
+  display: flex;
+  justify-content: end;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 150px;
+  margin-top: 100px;
+}
+
+.link-back a {
+  color: white;
+  text-decoration: none;
+}
+
+.link-back a:hover {
+  color: #852d75;
+}
+
+.link-back a:active {
+  color: #852d75;
+  opacity: 0.3;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+  margin-left: 400px;
+  margin-right: 400px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.contact h2 {
+  color: rgb(0, 0, 0);
+}
+
+.contact span {
+  font-size: 25px;
+  color: #852d75;
+}
